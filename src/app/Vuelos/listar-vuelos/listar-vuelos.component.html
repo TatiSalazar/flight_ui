@@ -1,0 +1,36 @@
+<div  style="text-align:center">
+    <h3 class="text-center">{{"Vuelos" | translate}}</h3>
+  </div>
+  <br>
+  <hr>
+  <div class="container">
+      <div class="card">
+          <div class="card-header">
+              <h4 class="text-center">{{"Listado de Vuelos" | translate}}</h4>
+          </div>
+          <div class="card-body">
+  <table class="table table-striped">
+      <thead>
+        <tr class="text-center">
+          <th scope="col">#</th>
+          <th scope="col">{{"Capacidad" | translate}}</th>
+          <th scope="col">{{"Numero Vuelo" | translate}}</th>
+          <th scope="col">{{"Acciones" | translate}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vuelo of vuelos" class="text-center">
+          <td>{{vuelo.id}}</td>
+          <td>{{vuelo.capacidad}}</td>
+          <td>{{vuelo.numeroVuelo}}</td>
+          <td>
+            <button (click)="ListarPasajeros(vuelo)" class="btn btn-warning">{{"Listar Pasajeros" | translate}}</button>
+      
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <div></div>
+  </div>

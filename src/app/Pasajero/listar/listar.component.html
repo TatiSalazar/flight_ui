@@ -1,0 +1,53 @@
+
+ <div  style="text-align:center">
+  <h3 class="text-center">{{"Pasajeros" | translate}}</h3>
+</div>
+<br>
+<hr>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="text-center">{{"Listado de Pasajeros" | translate}}</h4>
+        </div>
+        <div class="card-body">
+<table class="table table-striped">
+    <thead>
+      <tr class="text-center">
+        <th scope="col">#</th>
+        <th scope="col">{{"Nombre" | translate}}</th>
+        <th scope="col">{{"Documento" | translate}}</th>
+        <th scope="col">{{"Correo" | translate}}</th>
+        <th scope="col">{{"Telefono" | translate}}</th>
+        <th scope="col">{{"Acciones" | translate}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pasajero of pasajeros" class="text-center">
+        <td>{{pasajero.id}}</td>
+        <td>{{pasajero.nombre}}</td>
+        <td>{{pasajero.documento}}</td>
+        <td>{{pasajero.email}}</td>
+        <td>{{pasajero.telefono}}</td>
+        <td>
+          <button (click)="Editar(pasajero)" class="btn btn-warning">{{"Editar" | translate}}</button>
+          <button (click)="Eliminar(pasajero)" class="btn btn-danger" style="margin-left:10px">{{"Eliminar" | translate}}</button>
+        </td>
+      </tr>
+    </tbody>
+      <button  (click)="CrearPasajero()" class="btn btn-warning" style="margin-top: 10px;">{{"Crear Nuevo Pasajero" | translate}}</button> 
+  </table>
+
+</div>
+</div>
+<div></div>
+<form class="form-inline">
+  <div class="form-group mb-2">
+    <h4>{{"Buscar Pasajero" | translate}}</h4>
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="inputPassword2" class="sr-only" style="margin-top: 50px;"></label>
+    <input [(ngModel)]="id" name="id" type="text" class="form-control" id="inputPassword2" style="margin-top: 10px;">
+  </div>
+  <button  (click)="Buscar()" type="submit" class="btn btn-warning" style="margin-top: 10px;">{{"Buscar" | translate}}</button>
+</form>
+</div>

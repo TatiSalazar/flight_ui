@@ -1,0 +1,32 @@
+{
+    "¡Bienvenido!": "¡Welcome!",
+    "Vuelos Nacionales T.S.P.": "National Flights T.S.P.",
+    "Listar Vuelos": "List Flights",
+    "Listar Pasajeros":"List Passengers",
+    "Pasajeros":"Passengers" ,
+    "Listado de Pasajeros": "Passenger List" ,
+    "Editar": "Edit",
+    "Eliminar": "Delete",
+    "Crear Nuevo Pasajero":"Create New Passenger" ,
+    "Buscar Pasajero": "Search Passenger",
+    "Buscar":"Search",
+    "Modificar Pasajero":"Modify Passenger" ,
+    "Nombre": "Name", 
+    "Documento":"Document" , 
+    "Correo": "E-mail" ,
+    "Telefono": "Phone Number",
+    "Guardar":  "Save",
+    "Acciones": "Actions",
+    "Registro de Pasajeros":"Passenger Registration",
+    "Vuelos": "Flights", 
+    "Listado de Vuelos":"Flight List" ,
+    "Capacidad": "Capacity",
+    "Numero Vuelo": "Flight Number"
+
+
+
+
+
+
+
+}
