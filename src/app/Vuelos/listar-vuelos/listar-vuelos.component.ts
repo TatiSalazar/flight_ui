@@ -25,13 +25,6 @@ export class ListarVuelosComponent implements OnInit {
   ListarPasajeros(vuelo:Vuelo){
     localStorage.setItem("id",vuelo.id.toString());
      this.router.navigate(["listarPasajeros"]);
-    // for (let i = 0; i < this.vuelos.length; i++) {
-    //   let idvuelo=this.vuelos[i].id;
-      
-    //   console.log(idvuelo);
-     
-      
-    // }
   }
 
 }

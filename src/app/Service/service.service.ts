@@ -7,14 +7,8 @@ export class ServiceService {
 
   constructor(private http:HttpClient) { }
 
-  //pasajero: Pasajero;
-
   Url = 'http://localhost:8090/pasajeros/';
   Url_Vuelos = 'http://localhost:8090/vuelos/';
-  
-  // public getAllPasajerosById(id): Observable<any>{
-  //   return this.httpClient.get(this.API_SERVER+id);
-  // }
 
    getPasajeros(){
     return this.http.get<Pasajero[]>(this.Url);
@@ -32,12 +26,8 @@ export class ServiceService {
       return this.http.delete<Pasajero>(this.Url+"/delete/"+pasajero.id);
     }
   
-  //vuelos
   public getAllVuelos(){
     return this.http.get<Vuelo[]>(this.Url_Vuelos);
   }
 
-  // public getAllVuelosByID(id): Observable<any>{
-  //   return this.httpClient.get(this.API_SERVER+id);
-  // }
 }

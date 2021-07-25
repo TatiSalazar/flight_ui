@@ -5,10 +5,7 @@ import { ListarComponent } from './Pasajero/listar/listar.component';
 import { EditComponent } from './Pasajero/edit/edit.component';
 import { AddComponent } from './Pasajero/add/add.component';
 import { ListarVuelosComponent } from './Vuelos/listar-vuelos/listar-vuelos.component';
-import { ListarVuelosPComponent } from './Vuelos/listar-vuelos-p/listar-vuelos-p.component';
-
 import { RouterModule } from '@angular/router';
-
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import {ServiceService} from '../app/Service/service.service';
@@ -29,7 +26,6 @@ export function HttpLoaderFactory (http: HttpClient){
     EditComponent,
     AddComponent,
     ListarVuelosComponent,
-    ListarVuelosPComponent,
     HomeComponent,
     HeaderComponent,
   ],
