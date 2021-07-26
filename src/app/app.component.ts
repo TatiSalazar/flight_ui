@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'vuelosFrontend';
   
   constructor(public translate: TranslateService){
-    this.translate.addLangs(['es','en','zh']);
+    this.translate.addLangs(['es','en']);
     this.translate.setDefaultLang('es');
     this.translate.use('en');
   }

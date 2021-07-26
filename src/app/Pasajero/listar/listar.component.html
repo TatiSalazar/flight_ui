@@ -29,12 +29,12 @@
         <td>{{pasajero.email}}</td>
         <td>{{pasajero.telefono}}</td>
         <td>
-          <button (click)="Editar(pasajero)" class="btn btn-warning">{{"Editar" | translate}}</button>
+          <button (click)="Editar(pasajero)" class="btn btn-info">{{"Editar" | translate}}</button>
           <button (click)="Eliminar(pasajero)" class="btn btn-danger" style="margin-left:10px">{{"Eliminar" | translate}}</button>
         </td>
       </tr>
     </tbody>
-      <button  (click)="CrearPasajero()" class="btn btn-warning" style="margin-top: 10px;">{{"Crear Nuevo Pasajero" | translate}}</button> 
+      <button  (click)="CrearPasajero()" class="btn btn-info" style="margin-top: 10px;">{{"Crear Nuevo Pasajero" | translate}}</button> 
   </table>
 
 </div>
@@ -48,6 +48,6 @@
     <label for="inputPassword2" class="sr-only" style="margin-top: 50px;"></label>
     <input [(ngModel)]="id" name="id" type="text" class="form-control" id="inputPassword2" style="margin-top: 10px;">
   </div>
-  <button  (click)="Buscar()" type="submit" class="btn btn-warning" style="margin-top: 10px;">{{"Buscar" | translate}}</button>
+  <button  (click)="Buscar()" type="submit" class="btn btn-info" style="margin-top: 10px;">{{"Buscar" | translate}}</button>
 </form>
 </div>
